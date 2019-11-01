@@ -9,4 +9,7 @@ module.exports = {
   test: function(req,res){
     res.send('Greetings from the Test Controller');
   },
+  test2: function(req,res){
+    res.send("Greeting from test2");
+  }
 }
