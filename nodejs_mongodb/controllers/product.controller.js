@@ -51,6 +51,12 @@ module.exports = {
             if(err) return next(err);
             res.send('Product updated.');
         });
+    },
+    product_delete: function(req,res){
+        Product.findByIdAndRemove(req.params.id,function(err){
+            if(err) return next(err);
+            res.send('Deleted successfully');
+        });
     }
 
 }
